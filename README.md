@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
-	Semantic html is the practice of giving html elements or tags meaning that makes it easily readable. Such as <Section>.
+	Semantic html is the practice of giving html elements or tags meaning that makes it easily readable. Such as the section tag.
 
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
 
