@@ -77,6 +77,8 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    /*added margin top*/
+    margin-top: 20px;
 }
 
 .top-content .text-container {
@@ -104,7 +106,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /*background: black; <- commented out to set colors individually in box(#) classes*/ 
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -144,3 +146,67 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/*Begin adding own css*/
+header {
+    margin-top: 20px;
+}
+
+.jumboImageman {
+    margin-top: 35px;
+}
+
+.my-nav {
+    display: flex;
+    color: black;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: 15px;
+}
+.box1 {
+    background: teal;
+}
+.box2 {
+    background: gold;
+}
+.box3 {
+    background: cadetblue;
+}
+
+.box4 {
+    background: coral;
+}
+
+.box5 {
+    background: crimson;
+}
+
+.box6 {
+    background: forestgreen;
+}
+
+.box7 {
+    background: darkorchid;
+}
+
+.box8 {
+    background: hotpink;
+}
+.box9 {
+    background: indigo;
+}
+.box10 {
+    background: dodgerblue;
+}
+
+
+
+
+/*end adding own css*/
+
