@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+/* begin - added specific css page for about, imported css reset code along with footer css from index.css*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,7 +30,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    
 }
 ol, ul {
 	list-style: none;
@@ -69,68 +71,24 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+   
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-    /*added margin top*/
-    margin-top: 20px;
-}
-
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
-
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    /*background: black; <- commented out to set colors individually in box(#) classes*/ 
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
 
 footer {
     width: 100%;
     background: black;
+    transition: background 0.5s ease;
+    
+}
+
+footer:hover {
+    background: white;
+    color: black;
+    
+}
+footer nav a:hover {
+    color: black;
 }
 
 footer nav {
@@ -146,16 +104,11 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
-/*Begin adding own css*/
-header {
-    margin-top: 20px;
-}
+/* end - added specific css page for about, imported css reset code along with footer css from index.css*/
 
-.jumboImageman {
-    margin-top: 35px;
-}
+/*Begin own css */
 
-.my-nav {
+.my-nav-about {
     display: flex;
     color: black;
     align-items: flex-end;
@@ -169,44 +122,69 @@ header nav a {
     font-weight: 200;
     font-size: 15px;
 }
-.box1 {
-    background: teal;
-}
-.box2 {
-    background: gold;
-}
-.box3 {
-    background: cadetblue;
+
+header {
+    margin-top: 20px;
 }
 
-.box4 {
-    background: coral;
+.jumbo-image-about {
+    margin-top: 35px;
 }
 
-.box5 {
-    background: crimson;
+.top-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    margin-top: 20px;
 }
 
-.box6 {
-    background: forestgreen;
+.top-content-about .text-container-about {
+    
+    padding: 0 2%;
+    padding-bottom: 20px;  
 }
 
-.box7 {
-    background: darkorchid;
+.middle-content-about {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
 }
 
-.box8 {
-    background: hotpink;
+.block-container-about {
+    width: 48%;
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px; 
+    border-bottom: 1px dashed black;
+    margin-bottom: 40px;
 }
-.box9 {
-    background: indigo;
-}
-.box10 {
-    background: dodgerblue;
+
+.block-container-about h2 {
+    padding-top: 15px;
 }
 
+.button {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 35%;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: 200;
+    
+
+}
+
+.bottom-section-about {
+    margin-top: 10px;
+    padding: 0 2%;
+    margin-bottom: 40px;
+}
 
 
 
-/*end adding own css*/
 
+/*End own css*/
